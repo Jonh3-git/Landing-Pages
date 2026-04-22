@@ -302,15 +302,15 @@ body {
 }
 
 /* Imagens dos itens */
-.coxinha { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1599599810694-45d6b02eda30?w=500&h=400&fit=crop'); background-size: cover; background-position: center; }
-.pastel { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1565958011457-ce63c631a10e?w=500&h=400&fit=crop'); background-size: cover; background-position: center; }
-.misto { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=400&fit=crop'); background-size: cover; background-position: center; }
-.pao-frances { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1599599810694-45d6b02eda30?w=500&h=400&fit=crop'); background-size: cover; background-position: center; }
-.pao-queijo { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1585518419759-399a9f4a7c9f?w=500&h=400&fit=crop'); background-size: cover; background-position: center; }
-.donut { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1585518419759-399a9f4a7c9f?w=500&h=400&fit=crop'); background-size: cover; background-position: center; }
-.bolo { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=400&fit=crop'); background-size: cover; background-position: center; }
-.cafe { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=400&fit=crop'); background-size: cover; background-position: center; }
-.suco { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1553530666-ba2a8e36c6f8?w=500&h=400&fit=crop'); background-size: cover; background-position: center; }
+.coxinha { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://picsum.photos/600/400?random=1'); background-size: cover; background-position: center; }
+.pastel { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://picsum.photos/600/400?random=2'); background-size: cover; background-position: center; }
+.misto { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://picsum.photos/600/400?random=3'); background-size: cover; background-position: center; }
+.pao-frances { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://picsum.photos/600/400?random=4'); background-size: cover; background-position: center; }
+.pao-queijo { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://picsum.photos/600/400?random=5'); background-size: cover; background-position: center; }
+.donut { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://picsum.photos/600/400?random=6'); background-size: cover; background-position: center; }
+.bolo { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://picsum.photos/600/400?random=7'); background-size: cover; background-position: center; }
+.cafe { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://picsum.photos/600/400?random=8'); background-size: cover; background-position: center; }
+.suco { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://picsum.photos/600/400?random=9'); background-size: cover; background-position: center; }
 
 .item-info {
     padding: 1.5rem;
