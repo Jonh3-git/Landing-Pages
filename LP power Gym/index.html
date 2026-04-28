@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Gym - Treine com Força, Viva com Energia!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">POWER GYM</div>
+            <ul class="nav-links">
+                <li><a href="#horarios">Horários</a></li>
+                <li><a href="#aulas">Aulas</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#loja">Loja</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button class="cta-btn" onclick="scrollToSection('planos')">MATRICULE-SE</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Power Gym</h1>
+            <p>Treine com Força, Viva com Energia! Transforme seu corpo e sua mente.</p>
+            <div class="hero-buttons">
+                <button class="cta-btn" onclick="scrollToSection('planos')">VER PLANOS</button>
+                <button class="cta-btn secondary" onclick="scrollToSection('horarios')">HORÁRIOS</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horários -->
+    <section id="horarios" class="reveal">
+        <h2>📆 Nossos Horários</h2>
+        <div class="horarios-grid">
+            <div class="horario-card">
+                <h3><i class="fas fa-calendar-day"></i> Segunda à Sexta</h3>
+                <div class="horario-item"><span>05:00</span><span>22:00</span></div>
+            </div>
+            <div class="horario-card">
+                <h3><i class="fas fa-calendar-day"></i> Sábado</h3>
+                <div class="horario-item"><span>08:00</span><span>16:00</span></div>
+            </div>
+            <div class="horario-card">
+                <h3><i class="fas fa-calendar-day"></i> Domingo</h3>
+                <div class="horario-item"><span>08:00</span><span>12:00</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aulas Coletivas -->
+    <section id="aulas" class="reveal">
+        <h2>🏋️‍♀️ Aulas Coletivas</h2>
+        <p class="section-subtitle">
+            Escolha o melhor horário para você! Confira nossa programação e mergulhe nos treinos!
+        </p>
+        <div class="aulas-container">
+            <div class="dia-aula">
+                <h4>🟦 Segunda (SEG)</h4>
+                <div>7:20 – Rit Box</div>
+                <div>19:00 – Fitdance</div>
+            </div>
+            <div class="dia-aula">
+                <h4>🟦 Terça (TER)</h4>
+                <div>18:00 – Rit Box</div>
+                <div>19:00 – Spinning</div>
+                <div>19:30 – Spinning</div>
+            </div>
+            <div class="dia-aula">
+                <h4>🟦 Quarta (QUA)</h4>
+                <div>7:20 – Rit Box</div>
+                <div>19:00 – Fitdance</div>
+            </div>
+            <div class="dia-aula">
+                <h4>🟦 Quinta (QUI)</h4>
+                <div>18:00 – Rit Box</div>
+                <div>19:00 – Spinning</div>
+                <div>19:30 – Spinning</div>
+            </div>
+            <div class="dia-aula">
+                <h4>🟦 Sexta (SEX)</h4>
+                <div>19:00 – Fitdance</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos -->
+    <section id="planos" class="reveal">
+        <h2>💪 Planos e Serviços</h2>
+        <div class="planos-grid">
+            <div class="plano-card">
+                <h3>🥗 Plano Nutri</h3>
+                <div class="preco">R$ 99,99</div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i>Acompanhamento nutricional</li>
+                    <li><i class="fas fa-check"></i>Plano alimentar</li>
+                    <li><i class="fas fa-check"></i>Avaliação física</li>
+                </ul>
+                <button class="cta-btn">CONTRATAR</button>
+            </div>
+            <div class="plano-card featured">
+                <h3>🏋️ Mensal + Nutri</h3>
+                <div class="preco">R$ 199,99</div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i>Musculação</li>
+                    <li><i class="fas fa-check"></i>Aulas coletivas</li>
+                    <li><i class="fas fa-check"></i>Acompanhamento nutricional</li>
+                    <li><i class="fas fa-check"></i>Avaliação física</li>
+                </ul>
+                <button class="cta-btn">CONTRATAR</button>
+            </div>
+            <div class="plano-card">
+                <h3>📊 Avaliação</h3>
+                <div class="preco">R$ 30,00</div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i>Bioimpedância</li>
+                    <li><i class="fas fa-check"></i>Adipometria</li>
+                    <li><i class="fas fa-check"></i>Perimetria</li>
+                </ul>
+                <button class="cta-btn">AGENDAR</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="reveal">
+        <h2>✨ Por que treinar na Power Gym?</h2>
+        <div class="beneficios-grid">
+            <div class="beneficio-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Saúde Cardiovascular</h3>
+                <p>Reduz risco de doenças cardíacas, melhora circulação e fortalece o coração.</p>
+            </div>
+            <div class="beneficio-card">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Ganho de Força</h3>
+                <p>Aumenta massa muscular, fortalece ossos e melhora postura corporal.</p>
+            </div>
+            <div class="beneficio-card">
+                <i class="fas fa-brain"></i>
+                <h3>Saúde Mental</h3>
+                <p>Reduz estresse, ansiedade e melhora autoestima e qualidade do sono.</p>
+            </div>
+            <div class="beneficio-card">
+                <i class="fas fa-weight"></i>
+                <h3>Controle de Peso</h3>
+                <p>Queima calorias, acelera metabolismo e ajuda no emagrecimento.</p>
+            </div>
+            <div class="beneficio-card">
+                <i class="fas fa-users"></i>
+                <h3>Comunidade</h3>
+                <p>Motivação coletiva, networking e novos amigos com mesmo objetivo.</p>
+            </div>
+            <div class="beneficio-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Resultados Comprovados</h3>
+                <p>Profissionais qualificados e estrutura completa para seus objetivos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loja -->
+    <section id="loja" class="reveal">
+        <h2>🛒 Nossa Loja</h2>
+        <p class="section-subtitle">
+            Suplementos e acessórios de qualidade para potencializar seus resultados!
+        </p>
+        <div class="loja-grid">
+            <div class="produto">
+                <i class="fas fa-pills"></i>
+                <h4>Whey Protein</h4>
+                <p>R$ 129,90</p>
+            </div>
+            <div class="produto">
+                <i class="fas fa-fire"></i>
+                <h4>Creatina</h4>
+                <p>R$ 89,90</p>
+            </div>
+            <div class="produto">
+                <i class="fas fa-mountain"></i>
+                <h4>Pré-treino</h4>
+                <p>R$ 99,90</p>
+            </div>
+            <div class="produto">
+                <i class="fas fa-apple-alt"></i>
+                <h4>Hipercalórico</h4>
+                <p>R$ 149,90</p>
+            </div>
+            <div class="produto">
+                <i class="fas fa-dumbbell"></i>
+                <h4>Barras de Proteína</h4>
+                <p>R$ 12,90 und</p>
+            </div>
+            <div class="produto">
+                <i class="fas fa-capsules"></i>
+                <h4>Glutamina</h4>
+                <p>R$ 79,90</p>
+            </div>
+            <div class="produto">
+                <i class="fas fa-tint"></i>
+                <h4>Garrafinha 1L</h4>
+                <p>R$ 39,90</p>
+            </div>
+            <div class="produto">
+                <i class="fas fa-tshirt"></i>
+                <h4>Camiseta Dry Fit</h4>
+                <p>R$ 89,90</p>
+            </div>
+            <div class="produto">
+                <i class="fas fa-running"></i>
+                <h4>Short Fitness</h4>
+                <p>R$ 79,90</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato reveal">
+        <h2>📍 Encontre-nos</h2>
+        <div class="contato-info">
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <span>+55 62 9407-9879</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Esq. C - Rua 02, R. 9, N° 863 - Qd 2 Lt 18<br>Trindade - GO, 75392-752</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/556294079879" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Power Gym. Todos os direitos reservados. | Transforme seu corpo, transforme sua vida!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
