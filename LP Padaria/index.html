@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Delícias - Pães, Bolos e Salgados Frescos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-bread-slice"></i> Padaria Delícias
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#menu">Cardápio</a></li>
+                    <li><a href="#location">Localização</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#cart" class="cart-icon" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <div class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Banner com Café -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Bem-vindo à <span>Padaria Delícias</span></h1>
+            <p class="hero-subtitle">Pães quentinhos, bolos artesanais e salgados irresistíveis todos os dias!</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="cta-primary">Ver Cardápio</a>
+                <a href="#order" class="cta-secondary">Fazer Pedido</a>
+            </div>
+        </div>
+        <div class="coffee-animation">
+            <div class="coffee-cup">
+                <div class="steam"></div>
+                <div class="coffee-liquid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">Nosso Cardápio</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="salgados">Salgados</button>
+                <button class="category-btn" data-category="doces">Doces</button>
+                <button class="category-btn" data-category="bebidas">Bebidas</button>
+                <button class="category-btn" data-category="pães">Pães</button>
+            </div>
+            <div class="menu-grid" id="menuGrid">
+                <!-- Salgados -->
+                <div class="menu-item salgado" data-category="salgados">
+                    <div class="item-image coxinha"></div>
+                    <div class="item-info">
+                        <h3>Coxinha de Frango</h3>
+                        <p>Recheio cremoso de frango desfiado com catupiry</p>
+                        <div class="price">R$ 4,50</div>
+                        <button class="add-cart" data-name="Coxinha de Frango" data-price="4.50">
+                            <i class="fas fa-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item salgado" data-category="salgados">
+                    <div class="item-image pastel"></div>
+                    <div class="item-info">
+                        <h3>Pastel de Carne</h3>
+                        <p>Massa crocante com carne moída temperada</p>
+                        <div class="price">R$ 5,00</div>
+                        <button class="add-cart" data-name="Pastel de Carne" data-price="5.00">
+                            <i class="fas fa-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item salgado" data-category="salgados">
+                    <div class="item-image misto"></div>
+                    <div class="item-info">
+                        <h3>Misto Quente</h3>
+                        <p>Pão de forma com queijo e presunto derretido</p>
+                        <div class="price">R$ 6,50</div>
+                        <button class="add-cart" data-name="Misto Quente" data-price="6.50">
+                            <i class="fas fa-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pães -->
+                <div class="menu-item pao" data-category="pães">
+                    <div class="item-image pao-frances"></div>
+                    <div class="item-info">
+                        <h3>Pão Francês</h3>
+                        <p>Unidade - recém-saído do forno</p>
+                        <div class="price">R$ 0,80</div>
+                        <button class="add-cart" data-name="Pão Francês" data-price="0.80">
+                            <i class="fas fa-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item pao" data-category="pães">
+                    <div class="item-image pao-queijo"></div>
+                    <div class="item-info">
+                        <h3>Pão de Queijo</h3>
+                        <p>Quentinho e recheado de queijo minas</p>
+                        <div class="price">R$ 3,50</div>
+                        <button class="add-cart" data-name="Pão de Queijo" data-price="3.50">
+                            <i class="fas fa-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Doces -->
+                <div class="menu-item doce" data-category="doces">
+                    <div class="item-image donut"></div>
+                    <div class="item-info">
+                        <h3>Donut Recheado</h3>
+                        <p>Chocolate ou morango - escolha seu sabor</p>
+                        <div class="price">R$ 7,90</div>
+                        <button class="add-cart" data-name="Donut Recheado" data-price="7.90">
+                            <i class="fas fa-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item doce" data-category="doces">
+                    <div class="item-image bolo"></div>
+                    <div class="item-info">
+                        <h3>Fatia de Bolo</h3>
+                        <p>Bolo de cenoura com cobertura de chocolate</p>
+                        <div class="price">R$ 8,50</div>
+                        <button class="add-cart" data-name="Fatia de Bolo" data-price="8.50">
+                            <i class="fas fa-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="menu-item bebida" data-category="bebidas">
+                    <div class="item-image cafe"></div>
+                    <div class="item-info">
+                        <h3>Café Expresso</h3>
+                        <p>Café fresquinho na xícara perfeita</p>
+                        <div class="price">R$ 3,00</div>
+                        <button class="add-cart" data-name="Café Expresso" data-price="3.00">
+                            <i class="fas fa-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item bebida" data-category="bebidas">
+                    <div class="item-image suco"></div>
+                    <div class="item-info">
+                        <h3>Suco Natural</h3>
+                        <p>Laranja, limão ou melancia batido na hora</p>
+                        <div class="price">R$ 6,00</div>
+                        <button class="add-cart" data-name="Suco Natural" data-price="6.00">
+                            <i class="fas fa-plus"></i> Adicionar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização -->
+    <section class="location-section" id="location">
+        <div class="container">
+            <h2 class="section-title">Onde Estamos</h2>
+            <div class="location-content">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Rua das Flores, 123 - Centro<br>São Paulo - SP</p>
+                    <div class="opening-hours">
+                        <h4>Horário de Funcionamento</h4>
+                        <p>Seg-Sáb: 6h às 20h<br>Dom: 7h às 14h</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h4>(11) 9999-1234</h4>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-whatsapp"></i>
+                        <h4>WhatsApp</h4>
+                        <p>(11) 9999-5678</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>Delivery</h4>
+                        <p>Entrega em 45min</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrinho Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Minha Sacola <span id="cartTotalItems">(0)</span></h3>
+                <button class="close-cart" id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: <span id="cartTotal">R$ 0,00</span></strong>
+                </div>
+                <button class="checkout-btn">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Padaria Delícias. Feito com ❤️ para você.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FUEGO BURGER — Fire Your Hunger</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo">FUEGO<span>BURGER</span></div>
+  <ul class="nav-links">
+    <li><a href="#cardapio">Cardápio</a></li>
+    <li><a href="#combos">Combos</a></li>
+    <li><a href="#avaliacoes">Avaliações</a></li>
+    <li><a href="#contato" class="nav-cta">Pedir Agora</a></li>
+  </ul>
+</nav>
+
+<!-- FLOAT BTN -->
+<a href="#cardapio" class="float-btn">🔥 Ver Cardápio</a>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🔥 Aberto Agora • Entrega em 30min</div>
+    <h1 class="hero-title">
+      <span class="line-orange">FUEGO</span>
+      <span class="line-white">BURGER</span>
+    </h1>
+    <p class="hero-sub">Sabor que pega fogo. Ingredientes selecionados, receitas exclusivas e aquela chama que nunca apaga. Bem-vindo ao melhor fast food da cidade.</p>
+    <div class="hero-actions">
+      <a href="#cardapio" class="btn-primary">Ver Cardápio</a>
+      <a href="#combos" class="btn-secondary">Promoções do Dia</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <strong>4.9★</strong>
+      <span>Avaliação média</span>
+    </div>
+    <div class="stat-item">
+      <strong>50k+</strong>
+      <span>Pedidos entregues</span>
+    </div>
+    <div class="stat-item">
+      <strong>28min</strong>
+      <span>Tempo médio</span>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="cardapio" class="menu-section">
+  <div class="menu-header reveal">
+    <div>
+      <div class="section-label">🍔 O Que Temos</div>
+      <h2 class="section-title">NOSSO CARDÁPIO</h2>
+      <div class="divider"></div>
+      <p class="section-desc">Cada item preparado na hora, com ingredientes frescos e o tempero que virou nossa marca registrada.</p>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="category-tabs reveal">
+    <button class="tab-btn active" onclick="showCategory('burgers', this)">Burgers</button>
+    <button class="tab-btn" onclick="showCategory('chicken', this)">Chicken</button>
+    <button class="tab-btn" onclick="showCategory('sides', this)">Acompanhamentos</button>
+    <button class="tab-btn" onclick="showCategory('drinks', this)">Bebidas</button>
+    <button class="tab-btn" onclick="showCategory('sobremesas', this)">Sobremesas</button>
+  </div>
+
+  <!-- BURGERS -->
+  <div class="menu-grid">
+    <div class="menu-category active" id="cat-burgers">
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Fuego Classic"/>
+          <span class="card-badge badge-hot">HOT</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Fuego Classic</div>
+          <div class="card-desc">Pão brioche artesanal grelhado, blend de 180g de carne Angus, queijo cheddar derretido, alface americana crocante, tomate fresco, picles da casa e nosso molho especial defumado.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 32,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80" alt="Double Inferno"/>
+          <span class="card-badge badge-hot">HOT</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Double Inferno</div>
+          <div class="card-desc">Dois blends de 150g cada, queijo pepper jack, jalapeños em conserva, cebola crispy, bacon defumado em tiras, maionese de pimenta habanero e molho barbecue artesanal tudo dentro de um pão pretzel.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 48,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=600&q=80" alt="Smoke King"/>
+          <span class="card-badge badge-new">NOVO</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Smoke King</div>
+          <div class="card-desc">Blend 200g defumado lentamente, queijo gouda, cebola caramelizada, rúcula fresca, tomates secos, maionese trufada artesanal em pão de malte. Experiência de churrasco em cada mordida.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 42,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=600&q=80" alt="Veggie Fuego"/>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Veggie Fuego</div>
+          <div class="card-desc">Blend de grão-de-bico e cogumelo portobello grelhado, queijo brie, rúcula, tomate confit, pesto de manjericão e aioli de alho negro num pão ciabatta tostado. 100% plant-based.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 36,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=600&q=80" alt="BBQ Titan"/>
+          <span class="card-badge badge-hot">TOP</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">BBQ Titan</div>
+          <div class="card-desc">Blend 250g com fritas de cebola crocante, queijo cheddar cremoso, bacon artesanal caramelizado, pepperoni grelhado, molho BBQ mel e mostarda. O maior da casa.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 55,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1612187530378-130b49985c77?w=600&q=80" alt="Classic Jr"/>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Classic Jr.</div>
+          <div class="card-desc">Pão de leite macio, blend 120g, queijo americano, alface, tomate, ketchup e mostarda. Simples, direto e incrível para quem ama o essencial. A opção mais amada pelas crianças.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 22,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CHICKEN -->
+    <div class="menu-category" id="cat-chicken">
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=600&q=80" alt="Crispy King"/>
+          <span class="card-badge badge-hot">HOT</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Crispy King</div>
+          <div class="card-desc">Filé de frango empanado na hora com blend de especiarias secretas, queijo suíço, alface roxa, tomate e maionese de ervas em pão brioche. Crocante por fora, suculento por dentro.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 34,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=600&q=80" alt="Nashville Hot"/>
+          <span class="card-badge badge-hot">PICANTE</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Nashville Hot</div>
+          <div class="card-desc">Frango frito banhado em molho Nashville apimentado, coleslaw da casa, picles do campo e mel de pimenta. Inspirado no clássico americano com o toque ardente do Fuego Burger.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 38,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=600&q=80" alt="Chicken Tenders"/>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Chicken Tenders (6un)</div>
+          <div class="card-desc">Tiras de frango empanadas na massa crocante temperada, assadas levemente para dourar e fritas em óleo limpo. Acompanham dois molhos à escolha: barbecue, ranch ou mel mostarda.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 29,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SIDES -->
+    <div class="menu-category" id="cat-sides">
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&q=80" alt="Fuego Fries"/>
+          <span class="card-badge badge-hot">FAVORITO</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Fuego Fries (G)</div>
+          <div class="card-desc">Batatas rústicas cortadas na palha, fritas duas vezes para máxima crocância, temperadas com blend de ervas finas, alho e páprica defumada. Servidas com molho aioli da casa.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 18,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1630431341973-02e1b662ec35?w=600&q=80" alt="Onion Rings"/>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Onion Rings (8un)</div>
+          <div class="card-desc">Rodelas de cebola dulce envoltas em massa de cerveja artesanal, temperadas com sal grosso e pimenta calabresa. Fritas até a casquinha dourada e crocante. Acompanha molho ranch gelado.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 19,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=600&q=80" alt="Loaded Fries"/>
+          <span class="card-badge badge-new">NOVO</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Loaded Fries</div>
+          <div class="card-desc">Fuego Fries coberta com cheddar cremoso derretido, bacon em cubinhos crocantes, cebolinha fresca e molho especial da casa. O acompanhamento que virou prato principal.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 26,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- DRINKS -->
+    <div class="menu-category" id="cat-drinks">
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1638176067037-e8c21e1abb26?w=600&q=80" alt="Milkshake Clássico"/>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Milkshake Clássico (500ml)</div>
+          <div class="card-desc">Preparado na hora com sorvete artesanal e leite integral gelado. Disponível em chocolate belga 70%, baunilha da Madagascar ou morango orgânico. Finalizado com chantilly e cobertura.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 22,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1527960471264-932f39eb5846?w=600&q=80" alt="Refrigerante"/>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Refrigerante (500ml)</div>
+          <div class="card-desc">Escolha entre Coca-Cola, Coca Zero, Guaraná Antarctica, Sprite ou Fanta Laranja. Servido bem gelado em copo exclusivo do Fuego Burger com muito gelo.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 8,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=600&q=80" alt="Limonada Suíça"/>
+          <span class="card-badge badge-new">NOVO</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Limonada Fuego (400ml)</div>
+          <div class="card-desc">Limão siciliano batido com casca, leite condensado, creme de leite fresco e raspas de gengibre. Finalizado com calda de pimenta rosa opcional. Refrescante e levemente picante.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 16,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SOBREMESAS -->
+    <div class="menu-category" id="cat-sobremesas">
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80" alt="Brownie Vulcão"/>
+          <span class="card-badge badge-hot">IRRESISTÍVEL</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Brownie Vulcão</div>
+          <div class="card-desc">Brownie de chocolate amargo assado na hora com recheio líquido de ganache. Servido quente com sorvete de baunilha, calda de chocolate e farofa de cookies. Um verdadeiro vulcão de sabor.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 24,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <div class="card-img-wrap">
+          <div class="card-shine"></div>
+          <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&q=80" alt="Cookies & Cream"/>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Cookies & Cream Sundae</div>
+          <div class="card-desc">Sorvete cremoso de baunilha com pedaços generosos de cookies oreo triturados, cobertura de chocolate branco quente e chantilly artesanal. Finalizado com cookies inteiros.</div>
+          <div class="card-footer">
+            <div class="card-price">R$ 19,90</div>
+            <button class="card-add-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FLAME BANNER -->
+<div class="flame-banner">
+  <p>TUDO FRESCO. TUDO <span>NA HORA.</span> TUDO <span>COM FOGO.</span></p>
+</div>
+
+<!-- COMBOS -->
+<section id="combos" class="combos-section">
+  <div class="reveal">
+    <div class="section-label">💥 Economize Mais</div>
+    <h2 class="section-title">COMBOS DO DIA</h2>
+    <div class="divider"></div>
+    <p class="section-desc">Monte o combo perfeito e pague menos. Sempre feito na hora, nunca reaproveitado.</p>
+  </div>
+
+  <div class="combo-grid">
+
+    <div class="combo-card reveal">
+      <div class="combo-number">01</div>
+      <div class="combo-name">Combo Clássico</div>
+      <ul class="combo-items">
+        <li>Fuego Classic (180g)</li>
+        <li>Fuego Fries P (150g)</li>
+        <li>Refrigerante 400ml</li>
+        <li>Molho à escolha</li>
+      </ul>
+      <div class="combo-footer">
+        <div class="combo-price">R$ 45,90</div>
+        <div class="combo-savings">Economize R$14</div>
+      </div>
+    </div>
+
+    <div class="combo-card reveal">
+      <div class="combo-number">02</div>
+      <div class="combo-name">Combo Família (4p)</div>
+      <ul class="combo-items">
+        <li>4x Classic Jr. (120g cada)</li>
+        <li>2x Fuego Fries G (400g)</li>
+        <li>4x Refrigerante 400ml</li>
+        <li>Sobremesa surpresa</li>
+      </ul>
+      <div class="combo-footer">
+        <div class="combo-price">R$ 129,90</div>
+        <div class="combo-savings">Economize R$42</div>
+      </div>
+    </div>
+
+    <div class="combo-card reveal">
+      <div class="combo-number">03</div>
+      <div class="combo-name">Combo Infernal</div>
+      <ul class="combo-items">
+        <li>Double Inferno (300g)</li>
+        <li>Loaded Fries G</li>
+        <li>Milkshake 500ml</li>
+        <li>Brownie Vulcão</li>
+      </ul>
+      <div class="combo-footer">
+        <div class="combo-price">R$ 89,90</div>
+        <div class="combo-savings">Economize R$25</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="avaliacoes" class="reviews-section">
+  <div class="reveal" style="text-align:center; margin-bottom: 0;">
+    <div class="section-label" style="justify-content:center; display:block;">⭐ O Que Dizem</div>
+    <h2 class="section-title" style="text-align:center;">CLIENTES FALAM</h2>
+    <div class="divider" style="margin: 20px auto;"></div>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"O Double Inferno é absolutamente insano. Fui uma vez e já vou toda semana. O bacon caramelizado é de outro nível, nunca comi nada parecido em nenhum fast food."</p>
+      <div class="review-author">
+        <div class="review-avatar">LM</div>
+        <div>
+          <div class="review-name">Lucas Mendonça</div>
+          <div class="review-location">São Paulo, SP</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Pedi o Combo Família para o aniversário do meu filho e todo mundo amou. As batatas são as melhores que já comi. Entrega rápida, embalagem bem feita. Voltamos sempre!"</p>
+      <div class="review-author">
+        <div class="review-avatar">CA</div>
+        <div>
+          <div class="review-name">Carla Alves</div>
+          <div class="review-location">Campinas, SP</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Sou vegano e o Veggie Fuego me surpreendeu demais. Finalmente um fast food que leva a sério a opção plant-based. O pesto e o brie juntos são uma combinação perfeita."</p>
+      <div class="review-author">
+        <div class="review-avatar">RF</div>
+        <div>
+          <div class="review-name">Rafael Fonseca</div>
+          <div class="review-location">Rio de Janeiro, RJ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contato">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo-big">FUEGO BURGER</span>
+      <p>Fast food com alma. Ingredientes frescos, receitas exclusivas e aquela chama que transforma uma refeição em experiência. Desde 2018 acendendo o fogo do sabor.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Cardápio</h4>
+      <ul>
+        <li><a href="#">Burgers</a></li>
+        <li><a href="#">Chicken</a></li>
+        <li><a href="#">Acompanhamentos</a></li>
+        <li><a href="#">Bebidas</a></li>
+        <li><a href="#">Sobremesas</a></li>
+        <li><a href="#">Combos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Franquias</a></li>
+        <li><a href="#">Trabalhe Conosco</a></li>
+        <li><a href="#">Sustentabilidade</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Atendimento</h4>
+      <ul>
+        <li><a href="#">Fale Conosco</a></li>
+        <li><a href="#">Rastrear Pedido</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Termos de Uso</a></li>
+        <li><a href="tel:08001234567">0800 123 4567</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span>Fuego Burger</span>. Todos os direitos reservados. Feito com 🔥 e muito sabor.</p>
+    <div class="social-links">
+      <a href="#">ig</a>
+      <a href="#">tt</a>
+      <a href="#">fb</a>
+      <a href="#">yt</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

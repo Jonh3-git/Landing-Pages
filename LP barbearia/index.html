@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOIR — Barbearia Exclusiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">NOIR <span>Barber</span></a>
+    <ul class="nav-links">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#sobre">Nossa História</a></li>
+      <li><a href="#agendamento">Contato</a></li>
+    </ul>
+    <button class="nav-cta" onclick="document.getElementById('agendamento').scrollIntoView({behavior:'smooth'})">
+      Agendar Visita
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">São Paulo · Desde 2009</p>
+      <h1 class="hero-title">
+        A Arte<br>
+        de <em>Revelar</em><br>
+        o Homem
+      </h1>
+      <p class="hero-desc">
+        Mais do que um corte — um ritual. Na NOIR, cada detalhe é trabalhado com precisão
+        cirúrgica e a sensibilidade de quem entende que estilo é caráter expresso.
+      </p>
+      <div class="hero-actions">
+        <a href="#agendamento" class="btn-primary">Reservar Horário</a>
+        <a href="#servicos" class="btn-ghost">Ver Serviços</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-wrapper">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200&q=80" alt="Barbearia NOIR">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-vertical-text">Est. MMIX — São Paulo</div>
+    </div>
+  </section>
+
+  <!-- ── STATS ── -->
+  <div class="stats-strip">
+    <div class="stat-item">
+      <div class="stat-number" data-target="15">0</div>
+      <div class="stat-label">Anos de Excelência</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="12000">0</div>
+      <div class="stat-label">Clientes Atendidos</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="8">0</div>
+      <div class="stat-label">Barbeiros Masters</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="98">0</div>
+      <div class="stat-label">% Satisfação</div>
+    </div>
+  </div>
+
+  <!-- ── SERVICES ── -->
+  <section id="servicos">
+    <div class="section-header">
+      <div>
+        <span class="section-label">Nossos Serviços</span>
+        <h2 class="section-title">Craft &amp;<br><em>Precisão</em></h2>
+      </div>
+      <div style="text-align:right;">
+        <div class="section-line" style="margin-left:auto;"></div>
+        <p class="section-sub">Cada serviço realizado com maestria absoluta</p>
+      </div>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-number">01</div>
+        <svg class="service-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 32L20 8L32 32" stroke="#C9A96E" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 24H28" stroke="#C9A96E" stroke-width="1" stroke-linecap="round"/>
+        </svg>
+        <h3 class="service-name">Corte Clássico</h3>
+        <p class="service-desc">Corte executado com tesoura e navalha, respeitando a estrutura facial e o estilo pessoal. Inclui lavagem, massagem capilar e finalização premium.</p>
+        <div class="service-price">R$ 95 <span>por sessão</span></div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">02</div>
+        <svg class="service-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="12" stroke="#C9A96E" stroke-width="1"/>
+          <path d="M14 20 Q20 14 26 20 Q20 26 14 20Z" stroke="#C9A96E" stroke-width="1" fill="none"/>
+        </svg>
+        <h3 class="service-name">Barba Artesanal</h3>
+        <p class="service-desc">Ritual completo de barba com toalha quente, óleos essenciais, modelagem com navalha reta e hidratação profunda. Uma experiência ancestral.</p>
+        <div class="service-price">R$ 75 <span>por sessão</span></div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">03</div>
+        <svg class="service-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 30C10 30 15 10 20 10C25 10 30 30 30 30" stroke="#C9A96E" stroke-width="1" stroke-linecap="round"/>
+          <path d="M15 22C15 22 17 18 20 18C23 18 25 22 25 22" stroke="#C9A96E" stroke-width="1" stroke-linecap="round"/>
+        </svg>
+        <h3 class="service-name">Combo Black</h3>
+        <p class="service-desc">A experiência completa NOIR. Corte + barba + tratamento capilar + sobrancelha + hidratação facial. Para o homem que entende de sofisticação.</p>
+        <div class="service-price">R$ 180 <span>por sessão</span></div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">04</div>
+        <svg class="service-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 8L22 16H30L24 21L26 29L20 24L14 29L16 21L10 16H18L20 8Z" stroke="#C9A96E" stroke-width="1" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <h3 class="service-name">Tratamentos VIP</h3>
+        <p class="service-desc">Colorimetria, tonalização, tratamentos anticaspa e reconstrução capilar com produtos importados. Serviços especializados com hora marcada exclusiva.</p>
+        <div class="service-price">R$ 120+ <span>consultar</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="sobre">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1000&q=80" alt="Interior NOIR Barber">
+      <div class="about-img-overlay"></div>
+      <div class="about-img-badge">
+        <div class="badge-num">15+</div>
+        <div class="badge-text">Anos de tradição</div>
+      </div>
+    </div>
+    <div class="about-content">
+      <span class="section-label">Nossa História</span>
+      <h2 class="about-title">Tradição com<br><em>Estética Moderna</em></h2>
+      <p class="about-text">
+        A NOIR nasceu da convicção de que o homem merece um espaço onde cuidado pessoal
+        é tratado como arte. Fundada em 2009, nossa barbearia é um refúgio de masculinidade refinada.
+      </p>
+      <p class="about-text">
+        Cada barbeiro passa por um rigoroso programa de formação e é enviado a treinar com os
+        melhores profissionais do Brasil e da Europa. Aqui, não aceitamos mediocridade.
+      </p>
+      <div class="differentiators">
+        <div class="diff-item">
+          <div class="diff-icon"></div>
+          <div class="diff-title">Produtos Importados</div>
+          <div class="diff-text">Linha exclusiva de produtos trazidos diretamente da Itália e Reino Unido.</div>
+        </div>
+        <div class="diff-item">
+          <div class="diff-icon"></div>
+          <div class="diff-title">Ambiente Privativo</div>
+          <div class="diff-text">Cadeiras com espaçamento generoso para uma experiência discreta e exclusiva.</div>
+        </div>
+        <div class="diff-item">
+          <div class="diff-icon"></div>
+          <div class="diff-title">Hora Marcada</div>
+          <div class="diff-text">Respeitamos o seu tempo. Zero filas, pontualidade garantida.</div>
+        </div>
+        <div class="diff-item">
+          <div class="diff-icon"></div>
+          <div class="diff-title">Bebidas Cortesia</div>
+          <div class="diff-text">Whisky, café especial e chás artesanais durante o atendimento.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ── -->
+  <section id="galeria">
+    <div class="gallery-header">
+      <div>
+        <span class="section-label">Portfólio</span>
+        <h2 class="section-title">Nosso<br><em>Trabalho</em></h2>
+      </div>
+      <div style="text-align:right;">
+        <div class="section-line" style="margin-left:auto;"></div>
+        <p class="section-sub">Cada foto é o resultado de precisão e técnica apurada</p>
+      </div>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item gi-1">
+        <img src="https://images.unsplash.com/photo-1621607512214-68297480165e?w=700&q=80" alt="Corte degradê">
+        <div class="overlay-label">Degradê Clássico</div>
+      </div>
+      <div class="gallery-item gi-2">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=700&q=80" alt="Corte moderno">
+        <div class="overlay-label">Corte Moderno</div>
+      </div>
+      <div class="gallery-item gi-3">
+        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=700&q=80" alt="Barba trabalhada">
+        <div class="overlay-label">Barba Artesanal</div>
+      </div>
+      <div class="gallery-item gi-4">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=700&q=80" alt="Acabamento navalha">
+        <div class="overlay-label">Navalha Reta</div>
+      </div>
+      <div class="gallery-item gi-5">
+        <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=900&q=80" alt="Corte social">
+        <div class="overlay-label">Corte Social</div>
+      </div>
+      <div class="gallery-item gi-6">
+        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&q=80" alt="Undercut">
+        <div class="overlay-label">Undercut</div>
+      </div>
+      <div class="gallery-item gi-7">
+        <img src="https://images.unsplash.com/photo-1605497787731-99a2f01afc45?w=600&q=80" alt="Combo completo">
+        <div class="overlay-label">Combo Black</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BOOKING CTA ── -->
+  <section id="agendamento">
+    <div class="booking-bg"></div>
+    <div class="booking-inner">
+      <div class="deco-line"></div>
+      <p class="booking-eyebrow">Reserve Sua Experiência</p>
+      <h2 class="booking-title">Pronto para<br><em>elevar</em> seu estilo?</h2>
+      <p class="booking-sub">
+        Agende agora e garanta seu horário com o barbeiro ideal para o seu estilo.<br>
+        Atendimento de terça a sábado, das 9h às 20h.
+      </p>
+      <div class="booking-actions">
+        <a href="https://wa.me/5511999999999" class="btn-primary">Agendar via WhatsApp</a>
+        <a href="tel:+5511999999999" class="btn-outline">Ligar Agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo">NOIR <span>Barber</span></span>
+        <p>Um espaço onde tradição encontra modernidade. Para o homem que sabe o que quer e como quer parecer.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Nossa História</a></li>
+          <li><a href="#agendamento">Agendamento</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Horários</h4>
+        <ul>
+          <li>Terça — Sexta</li>
+          <li>9h às 20h</li>
+          <li>Sábado</li>
+          <li>9h às 18h</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li>Jardins, São Paulo</li>
+          <li>(11) 99999-9999</li>
+          <li>@noir.barber</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 <span>NOIR Barber</span>. Todos os direitos reservados.</p>
+      <p>Feito com <span>♦</span> em São Paulo</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
